@@ -1,2 +1,3 @@
 # DeliveryApp
 made with Typescript, React, Nextjs, Nodejs, FramerMotion and so much love...
+Updated from locale PC using nano editor
