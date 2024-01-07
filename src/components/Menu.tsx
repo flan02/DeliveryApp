@@ -13,7 +13,7 @@ const links = [
 ]
 
 const Menu = () => {
-    const [open, setOpen] = useState<boolean>(false)
+    const [open, setOpen] = useState<boolean | null>(false)
     const user: boolean = false //temporary
     return (
         <>
@@ -37,7 +37,7 @@ const Menu = () => {
                             : <Link href="/orders" className="hover:text-black" onClick={() => { setOpen(false) }}>Orders</Link>
                     }
 
-                    <CartIcon setOpen={setOpen} />
+                    <CartIcon />
 
                 </div>
             }
