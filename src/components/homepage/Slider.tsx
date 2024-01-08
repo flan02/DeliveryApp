@@ -32,12 +32,12 @@ const Slider = () => {
     const [currentSlide, setCurrentSlide] = useState<number>(0)
 
     //* WE CAN USE THIS TO CHANGE THE SLIDE EVERY 5 SECONDS: useSlide
-    /*
+
     useEffect(() => {
         const interval = setInterval(() => setCurrentSlide((prev) => (prev == data.length - 1) ? 0 : prev + 1), 3000);
         return () => clearInterval(interval)
     }, [])
-    */
+
     return (
         <div className="flex flex-col h-[calc(100vh-6rem)] md:h-[calc(100vh-9rem)] lg:flex-row bg-fuchsia-100">
             {/*TEXT CONTAINER*/}
@@ -49,7 +49,7 @@ const Slider = () => {
             </div>
             {/*IMAGE CONTAINER*/}
             <div className="w-full relative flex-1">
-                <Image src={data[currentSlide].image} alt="slide-image" fill className="object-cover"></Image>
+                <Image src={data[currentSlide].image} alt="slide-image" fill className="object-cover" sizes="10"></Image>
             </div>
         </div>
     )
