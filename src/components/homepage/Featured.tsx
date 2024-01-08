@@ -10,7 +10,7 @@ const Featured = () => {
                 {/*SINGLE ITEM*/}
                 {
                     featuredProducts.map((item, i) => (
-                        <div key={i} className=" h-[60vh] flex flex-col items-center justify-around py-8 hover:bg-fuchsia-50 transition-all duration-300 md:w-[50vw] xl:w-[33vw] xl:-h-[90vh]">
+                        <div key={i} className=" h-[60vh] flex flex-col items-center justify-around py-8 hover:bg-fuchsia-50 transition-all duration-300 w-[100vw] md:w-[50vw] xl:w-[33vw] xl:-h-[90vh]">
                             {/* IMAGE CONTAINER */}
                             {
                                 item.img && (
