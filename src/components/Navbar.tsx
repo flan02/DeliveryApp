@@ -9,13 +9,12 @@ const Navbar = () => {
   return (<div className="h-12 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:text-lg lg:px-20 xl:px-40">
     {/*LEFT LINKS*/}
     <div className="hidden md:flex gap-4 flex-1 md:text-center">
-      <Link href="/" className="hover:text-black">Homepage</Link>
-      <Link href="/menu" className="hover:text-black">Menu</Link>
-      <Link href="/" className="hover:text-black">Contact</Link>
+      <Link href="/" className="hover:text-black hover:underline">Homepage</Link>
+      <Link href="/menu" className="hover:text-black hover:underline">Menu</Link>
+      <Link href="/" className="hover:text-black hover:underline">Contact</Link>
     </div>
     {/*LOGO*/}
-    <Link href="/" className="font-bold flex-1 md:text-xl text-center 2xl:text-3xl">Pizza Hunt
-    </Link>
+    <Link href="/" className="font-bold flex-1 md:text-xl text-center 2xl:text-5xl">Pizza Hunt</Link>
     {/*MOBILE MENU*/}
     <div className="md:hidden">
       <Menu />
@@ -24,7 +23,7 @@ const Navbar = () => {
     <div className="hidden md:flex gap-4 items-center justify-end flex-1">
       <div className="md:absolute top-3 r-2 lg:static flex items-center gap-2 cursor-pointer bg-orange-300 px-1 rounded-md">
         <FaPhone />
-        <span>+5491124821510</span>
+        <span className="text-xs xl:text-md py-2 px-1">(617) 555-1234</span>
       </div>
       {
         !user ?

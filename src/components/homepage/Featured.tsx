@@ -4,9 +4,9 @@ import Image from "next/image"
 
 const Featured = () => {
     return (
-        <div className="w-full overflow-x-scroll text-red-500">
+        <div className="w-full overflow-hidden text-red-500 slider">
             {/*WRAPPER*/}
-            <div className="w-max flex">
+            <div className="w-max flex slider-track">
                 {/*SINGLE ITEM*/}
                 {
                     featuredProducts.map((item, i) => (

@@ -19,7 +19,7 @@ const Price = ({ price, id, options }: PriceProps) => {
   }, [quantity])
   return (
     <div className="flex flex-col gap-4">
-      <h2 className="text-2xl font-bold">u$S {total}</h2>
+      <h2 className="text-2xl font-bold">u$S {total.toFixed(2)}</h2>
       {/* OPTIONS CONTAINER */}
       <div className="flex gap-4">
         {options?.map((it, idx) => (
