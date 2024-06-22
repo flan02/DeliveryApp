@@ -2,6 +2,7 @@
 import Price from "@/components/Price"
 import { singleProduct } from "@/types/products/products.type"
 import Image from "next/image"
+import Link from "next/link";
 
 import { useParams } from 'next/navigation';
 
@@ -25,6 +26,9 @@ const ProductIdpage = () => {
                 <p>{singleProduct[product].desc}</p>
                 <Price price={singleProduct[product].price} options={singleProduct[product].options} id={singleProduct[product].id} />
             </div>
+            <Link href="/menu/pizzas" className="bg-slate-800 hover:text-red-500 text-white py-2 px-4 rounded-md">
+                back
+            </Link>
         </div>
     )
 }
