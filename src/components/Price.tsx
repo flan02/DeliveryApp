@@ -38,7 +38,7 @@ const Price = ({ price, id, options }: PriceProps) => {
           </div>
         </div>
         {/* CART BUTTON */}
-        <button type="button" className="w-56 uppercase bg-red-500 text-white p-3 ring-1 ring-red-500">Add to Cart</button>
+        <button type="button" className="hover:bg-slate-800 hover:text-red-500 w-56 uppercase bg-red-500 text-white p-3 ring-1 ring-red-500">Add to Cart</button>
       </div>
     </div>
   )
